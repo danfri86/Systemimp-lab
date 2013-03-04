@@ -1,0 +1,170 @@
+/* basicstyle.css */
+
+/* befintliga element */
+body {
+	font-family: Garamond;
+        background-color: pink;
+}
+
+input[type=submit] {
+	font-size: 20px;
+	border-radius: 15px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-family: Garamond;
+        font-size: 20px;
+}
+
+/* id */
+#pstyle {
+	font-size: 25px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: blue;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+#sitewrapper {
+    margin: 25px;
+	width: 100%;
+	max-width: 700px;
+	background-color: blue;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contentwrapper {
+	width: 100%;
+	background-color: lightblue;
+	min-height: 520px;
+    position: relative;
+}
+
+/*******************
+MENY
+*******************/
+#contentnav {
+	width: 20%;
+	float: left;
+	padding-top: 20px;
+}
+
+#contentnav ul {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 70%;
+}
+
+#contentnav ul li, #modurllinks ul li {
+	margin-bottom: 5px;
+	padding: 3px;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	background-color: blue;
+	color: white;
+}
+
+#contentnav ul li a, #modurllinks ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#contentnav ul li:hover, #modurllinks ul li:hover {
+	background-color: pink;
+	color: blue;
+}
+/******************/
+
+#contentsection{
+	width: 75%;
+	float: right;
+}
+
+#buttonlink {
+    position: relative;
+    top: 0;
+}
+
+/*******************
+TABELLEN MED SIFFROR
+*******************/
+ul#table {
+	float: left;
+	background: #fff;
+	width: 80%;
+}
+
+ul#table,
+ul#table li ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#table li ul li {
+	float: left;
+	padding: 1px;
+	width: -webkit-calc(100% / 10);
+	width: -moz-calc(100% / 10);
+	width: calc(100% / 10); 
+}
+
+ul#table img {
+    border: blue 1px solid;
+    /* Denna deklareras så att bilderna anmieras tillbaka efter :hover */
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;
+}
+
+ul#table img:hover {
+	-moz-transition: all 0.25s linear;
+	-moz-transform: rotate(-25deg) scale(1);
+	-webkit-transition: all 0.25s linear;
+	-webkit-transform: rotate(-25deg) scale(1);
+}
+
+ul#table img:active {
+	-moz-transform: scale(4);
+	-webkit-transform: scale(4);
+}
+
+#siteheader, #sitefooter {
+	background-color: blue;
+	color: white;
+}
+/******************/
+
+#siteheader {
+	font-size: 16px;
+	padding: 5px 10px;
+}
+
+#sitefooter {
+	font-size: 15px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#modurllinks ul li {
+	display: inline;
+	width: 100px;
+	border-radius: 15px;
+}
+
+h1, p {
+	color: white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
