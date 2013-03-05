@@ -1,11 +1,11 @@
-<!DOCTYPE html 
-PUBLIC "-//W3C//Dli XHTML 1.0 Sliict//EN"
-"http://www.w3.org/li/xhtml1/Dli/xhtml1-sliict.dli">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
 
 	<head>
 		<!--meta-->
-		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />            		
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		
 		<title>Tillståndslös miljö, PHP och Array</title>	
 		
 		<!--css-->
