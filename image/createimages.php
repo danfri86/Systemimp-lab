@@ -16,7 +16,7 @@
                 $image = imagecreatetruecolor(50, 50);
                 
                 //$bgColor = ImageColorAllocate ($image, 173, 216, 230);
-                $bgColor = ImageColorAllocate ($image, 0, 255, 0);
+                $bgColor = ImageColorAllocate ($image, 0, 0, 0);
                 
                 //http://www.php.net/manual/en/function.imagecolorallocate.php
                 //$textColor = imagecolorallocate($image, 0, 0, 255);
