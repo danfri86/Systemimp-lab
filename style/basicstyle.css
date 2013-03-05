@@ -109,7 +109,7 @@ ul#table li ul {
 
 ul#table li ul li {
 	float: left;
-	padding: 1px;
+	padding: 0px;
 	width: -webkit-calc(100% / 10);
 	width: -moz-calc(100% / 10);
 	width: calc(100% / 10); 
