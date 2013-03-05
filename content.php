@@ -1,7 +1,7 @@
 <?php include("incl/header.php") ?>
 	
 <body>
-	<div id="sitewrapper">
+	<div id="sitewrapper" class="clearfix">
 	
 		<div id="siteheader">
 			<h1>Tillståndslös miljö, PHP och Array</h1>			

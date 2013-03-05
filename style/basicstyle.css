@@ -7,9 +7,20 @@
   box-sizing: border-box;
 }
 
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
 body {
 	font-family: Garamond;
-    background-color: #eee;
+    background-color: #F4F5ED;
+    padding: 20px 0;
 }
 
 img {
@@ -18,12 +29,14 @@ img {
 }
 
 input[type=submit] {
-	font-size: 20px;
-	border-radius: 15px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        font-family: Garamond;
-        font-size: 20px;
+	font-size: 14px;
+    margin: 0 0 10px;
+    padding: 5px 10px;
+    color: #333;
+    font-family: Georgia;
+    background: #89CEDE;
+    border: none;
+    cursor: pointer;
 }
 
 /* id */
@@ -38,10 +51,8 @@ input[type=submit] {
 }
 
 #sitewrapper {
-    margin: 25px;
 	width: 100%;
 	max-width: 700px;
-	background-color: blue;
 	color: white;
 	margin-left: auto;
 	margin-right: auto;
@@ -50,8 +61,8 @@ input[type=submit] {
 #contentwrapper {
 	float: left;
 	width: 100%;
-	padding: 20px 0;
-	background-color: lightblue;
+	padding: 20px;
+	background: #929487;
     position: relative;
 }
 
@@ -59,25 +70,22 @@ input[type=submit] {
 MENY
 *******************/
 #contentnav {
-	width: 20%;
+	width: 25%;
 	float: left;
 }
 
 #contentnav ul {
-	float: right;
+	float: left;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	width: 70%;
+	width: 100%;
 }
 
 #contentnav ul li, #modurllinks ul li {
 	margin-bottom: 5px;
 	padding: 3px;
-	border-style: solid;
-	border-color: white;
-	border-width: 1px;
-	background-color: blue;
+	background-color: #C7C9BE;
 	color: white;
 }
 
@@ -93,7 +101,7 @@ MENY
 /******************/
 
 #contentsection{
-	width: 75%;
+	width: 70%;
 	float: right;
 }
 
@@ -108,9 +116,9 @@ TABELLEN MED SIFFROR
 ul#table {
 	float: left;
 	background: #fff;
-	width: -webkit-calc(80% + 10*2px);
-	width: -moz-calc(80% + 10*2px);
-	width: calc(80% + 10*2px); 
+	width: -webkit-calc(95% + 10*2px);
+	width: -moz-calc(95% + 10*2px);
+	width: calc(95% + 10*2px); 
 }
 
 ul#table img {
@@ -161,7 +169,7 @@ ul#table img:active {
 }
 
 #siteheader, #sitefooter {
-	background-color: blue;
+	background: #DC4E00;
 	color: white;
 }
 /******************/
