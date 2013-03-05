@@ -1,4 +1,4 @@
-<?php include('incl/header.php') ?>
+<?php include("incl/header.php") ?>
 	
 <body>
 	<div id="sitewrapper">
@@ -10,7 +10,7 @@
 		
 		<div id="contentwrapper">
 		                                
-			<?php include('incl/nav.php') ?>
+			<?php include("incl/nav.php") ?>
 					
 			<div id="contentsection">
 				 
@@ -179,4 +179,4 @@
 		</div><!-- /#contentwrapper -->
 		
 		<?php $method = "Ingen vald ännu!";	?>
-<?php include('incl/footer.php') ?>
+<?php include("incl/footer.php") ?>
