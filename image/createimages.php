@@ -56,7 +56,7 @@
                 //http://www.php.net/manual/en/function.imagedestroy.php
                 imagedestroy($image);
 
-                echo("<p><em><b>image" . $strCounter . ".jpg</b></em> är nu skapad!</p>" . PHP_EOL);
+                echo("<p><em><b>image" . $strCounter . ".png</b></em> är nu skapad!</p>" . PHP_EOL);
             }
         ?>
     </body>
