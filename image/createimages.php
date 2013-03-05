@@ -20,7 +20,7 @@
                 
                 //http://www.php.net/manual/en/function.imagecolorallocate.php
                 //$textColor = imagecolorallocate($image, 0, 0, 255);
-                $textColor = imagecolorallocate($image, 255, 0, 0);
+                $textColor = imagecolorallocate($image, 255, 255, 255);
 
                 $strCounter = $counter;
                 
