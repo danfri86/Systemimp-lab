@@ -163,6 +163,8 @@ ul#table img:active {
 }
 
 #sitefooter {
+	float: left;
+	width: 100%;
 	font-size: 15px;
 	text-align: center;
 	padding: 20px 0;
