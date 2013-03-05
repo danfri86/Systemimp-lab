@@ -143,14 +143,9 @@ TABELLEN MED SIFFROR
 *******************/
 ul#table {
 	float: left;
-	background: #fff;
 	width: -webkit-calc(95% + 10*2px);
 	width: -moz-calc(95% + 10*2px);
 	width: calc(95% + 10*2px); 
-}
-
-ul#table img {
-	display: block;
 }
 
 ul#table,
@@ -162,7 +157,6 @@ ul#table li ul {
 
 ul#table li ul li {
 	float: left;
-	background: black;
 	padding: 1px;
 	margin: 1px;
 	width: -webkit-calc(100% / 10 - 2px);
@@ -171,10 +165,10 @@ ul#table li ul li {
 }
 
 ul#table li ul li:hover {
-	background: white;
 }
 
 ul#table img {
+	display: block;
     border: black 1px solid;
     /* Denna deklareras så att bilderna anmieras tillbaka efter :hover */
 	-webkit-transition: all 1s;
