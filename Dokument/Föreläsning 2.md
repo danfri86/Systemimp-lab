@@ -1,6 +1,7 @@
 SYSTEMIMPLEMENTERINGSTEKNIK ISGB11 
 Föreläsning #2 5 Mars
 -----------
+Del 1.
 
 Formulär. 
 Två attribut man behöver hålla koll på. Viktiga för formuläret som helhet. ”action” & ”method”. 
@@ -66,4 +67,5 @@ string ini_set (string $varname, string $newvalue );
 ini_set(”display_errors”, 1);
 
 
-
+DEL 2 av föreläsning.
+--------------------
