@@ -69,3 +69,50 @@ ini_set(”display_errors”, 1);
 
 DEL 2 av föreläsning.
 --------------------
+
+<?php 
+header("Content-Type: application/xhtml+xml; charset=utf-8”);
+error_reporting(E_ALL);
+ini_set(”display_errors”, 1);
+?>
+
+<?php 
+echo(”<p> Detta är en första PHP-exempel</p>” .PHP_EOL);
+echo($svarsaknas);
+echo();
+?>
+
+<?php 
+ob_start();
+header("Content-Type: application/xhtml+xml; charset=utf-8”);
+include(”debug.php”);
+?>
+
+SELEKTION & ITERATION
+---------------------
+
+Olika operatorer - jämförelse-operatorer, logiska operatorer & aritmetiska operatorer. 
+
+Selektion - if & switch.
+
+Iteration - for & while.
+
+== - lika med
+=== - indentisk med (samma värde & samma datatyp)
+
+switch(variabel)
+{
+		case 1:
+	statement;
+	break;
+		case 1:
+	statement;
+	break;
+		case 1:
+	statement;
+	break;
+		default:
+	statement;
+}
+
+
