@@ -102,8 +102,10 @@ TABELLEN MED SIFFROR
 *******************/
 ul#table {
 	float: left;
-	width: 80%;
 	background: #fff;
+	width: -webkit-calc(80% + 10*2px);
+	width: -moz-calc(80% + 10*2px);
+	width: calc(80% + 10*2px); 
 }
 
 ul#table,
@@ -115,10 +117,16 @@ ul#table li ul {
 
 ul#table li ul li {
 	float: left;
+	background: blue;
 	padding: 1px;
-	width: -webkit-calc(100% / 10);
-	width: -moz-calc(100% / 10);
-	width: calc(100% / 10); 
+	margin: 1px;
+	width: -webkit-calc(100% / 10 - 2px);
+	width: -moz-calc(100% / 10 - 2px);
+	width: calc(100% / 10 - 2px); 
+}
+
+ul#table li ul li:hover {
+	background: white;
 }
 
 ul#table img {
