@@ -1,16 +1,4 @@
-<!DOCTYPE html 
-PUBLIC "-//W3C//Dli XHTML 1.0 Sliict//EN"
-"http://www.w3.org/li/xhtml1/Dli/xhtml1-sliict.dli">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
-
-	<head>
-		<!--meta-->
-		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />            		
-		<title>Tillståndslös miljö, PHP och Array</title>	
-		
-		<!--css-->
-		<link rel="stylesheet" href="style/basicstyle.css" type="text/css" /> 
-	</head>
+<?php include('header.php') ?>
 	
 	<body>
 		<div id="sitewrapper">
@@ -22,25 +10,7 @@ PUBLIC "-//W3C//Dli XHTML 1.0 Sliict//EN"
 			
 			<div id="contentwrapper">
 			                                
-				<div id="contentnav">
-					<ul>
-						<li>
-							<a href="#">Gömda fält</a>
-						</li>
-						
-						<li>
-							<a href="#">Modifierad URL</a>
-						</li>
-						
-						<li>
-							<a href="#">Kakor</a>
-						</li>
-						
-						<li>
-							<a href="#">Sessioner</a>
-						</li>
-					</ul>
-				</div><!-- /#contentnav -->
+				<?php include('nav.php') ?>
 						
 				<div id="contentsection">
 					 
@@ -207,13 +177,4 @@ PUBLIC "-//W3C//Dli XHTML 1.0 Sliict//EN"
 			
 			</div><!-- /#contentwrapper -->
 			
-			<div id="sitefooter">
-				<p> ISGB11 Systemimplementeringsteknik VT13<br />
-					<b style="font-size: 20px;">Här skall lösningsmetoden skrivas ut utan inline style!</b></p>	 <p>
-					<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Sliict" 							height="31" width="88" /></a>
-				</p>	
-			</div>
-			
-		</div><!-- /#sitewrapper -->
-	</body>
-</html>
+<?php include('footer.php') ?>
