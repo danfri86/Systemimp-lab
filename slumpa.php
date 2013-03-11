@@ -1,17 +1,39 @@
 <?php
 
-	function slumpaskrivut () {
+	function slumpa () {
 	
-		for ($counter = 1; $counter <= 10; $counter++) {
+		$theArray = array();
 		
-			echo(mt_rand(1, 1000) . " ");
+		for ($counter = 0; $counter < 100; $counter++) {
+		
+			$theArray[$counter] = mt_rand(1, 100);
 			
 		} 
 		
-		echo("<br />" . PHP_EOL);
+		return $theArray;
+		
 		
 		//EOL = end of line
+		
 	
+	}
+	
+	function sortera($inVektor) {
+		
+		sort($inVektor);
+		
+	}
+	
+	function skrivut($inVektor) {
+		
+		if(is_array($inVektor)) {
+			
+			echo("<pre>");
+			print_r($inVektor);
+			echo("</pre>");
+			
+		}
+		
 	}
 	
 ?>

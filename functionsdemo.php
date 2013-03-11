@@ -14,9 +14,10 @@
 		<style type="text/css">
 		div {
 			margin: 100px auto;
-			width: 700px;
+			width: 420px;
 			text-align: center;
-			font-size: 2em;
+			max-width: 100%;
+			font-size: 1.2em;
 		}
 		</style>
 	</head>
@@ -25,9 +26,16 @@
 		<?php
 		
 			include ("slumpa.php");
-			slumpaskrivut();
-			slumpaskrivut();
-			slumpaskrivut();
+			
+			$myArray = slumpa();
+			
+			sortera(&$myArray);
+			
+			skrivut($myArray);
+
+		
+			
+			
 
 		
 		?>
