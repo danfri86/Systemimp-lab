@@ -1,5 +1,5 @@
 <?php
 	
-	
+	echo("hidden.php");
 				
 ?>
