@@ -18,6 +18,41 @@
 				<?php include("incl/site/modurl.php") ?>
 				<?php include("incl/site/hidden.php") ?>
 				<?php include("incl/site/session.php") ?>
+				
+				<?php
+					$p = "p";
+				
+					if (isset($_GET["p"])) {
+				   		echo($_GET["p"]);
+				   		
+				   		if ($p == "h") {
+					   		 $filetoinclude = "hidden.php";
+					   		 $method = "hidden";
+				   		}
+				   		
+				   		if ($p == "m") {
+					   		 $filetoinclude = "modurl.php";
+					   		 $method = "modurl";
+				   		}
+				   		
+				   		if ($p == "c") {
+					   		 $filetoinclude = "cookie.php";
+					   		 $method = "cookie";
+				   		}
+				   		
+				   		if ($p == "s") {
+					   		 $filetoinclude = "session.php";
+					   		 $method = "session";
+				   		}
+				   	}
+				   	else {
+				   		 $filetoinclude = "default.php";
+				   		 $method = "ingen metod vald ännu!";
+				   	}
+				?>
+				
+				<?php include("incl/myArray.php") ?>
+				<?php include("incl/site/\"". $filetoinclude) ?>
 			
 				<!--
 				<ul id="table">
