@@ -13,47 +13,53 @@
 			<?php include("incl/nav.php") ?>
 					
 			<div id="contentsection">
-			
-				<?php include("incl/site/cookie.php") ?>
-				<?php include("incl/site/modurl.php") ?>
-				<?php include("incl/site/hidden.php") ?>
-				<?php include("incl/site/session.php") ?>
 				
 				<?php
 					$p = "p";
 				
 					if (isset($_GET["p"])) {
-				   		echo($_GET["p"]);
+				   		echo($_GET["p"]. " ");
 				   		
-				   		if ($p == "h") {
-					   		 $filetoinclude = "hidden.php";
-					   		 $method = "hidden";
+				   		if ($_GET["p"] == "h") {
+					   		$filetoinclude = "hidden.php";
+					   		$method = "hidden";
+					   		
+					   		include("incl/site/". $filetoinclude);
 				   		}
 				   		
-				   		if ($p == "m") {
-					   		 $filetoinclude = "modurl.php";
-					   		 $method = "modurl";
+				   		if ($_GET["p"] == "m") {
+					   		$filetoinclude = "modurl.php";
+					   		$method = "modurl";
+					   		
+					   		include("incl/site/". $filetoinclude);
 				   		}
 				   		
-				   		if ($p == "c") {
-					   		 $filetoinclude = "cookie.php";
-					   		 $method = "cookie";
+				   		if ($_GET["p"] == "c") {
+					   		$filetoinclude = "cookie.php";
+					   		$method = "cookie";
+					   		
+					   		include("incl/site/". $filetoinclude);
 				   		}
 				   		
-				   		if ($p == "s") {
-					   		 $filetoinclude = "session.php";
-					   		 $method = "session";
+				   		if ($_GET["p"] == "s") {
+					   		$filetoinclude = "session.php";
+					   		$method = "session";
+					   		
+					   		include("incl/site/". $filetoinclude);
 				   		}
 				   	}
 				   	else {
 				   		 $filetoinclude = "default.php";
 				   		 $method = "ingen metod vald ännu!";
+				   		 
+				   		 include("incl/site/". $filetoinclude);
 				   	}
+				   	
+				   	include("incl/myArray.php");
+				   	
+				   	
 				?>
 				
-				<?php include("incl/myArray.php") ?>
-				<?php include("incl/site/\"". $filetoinclude) ?>
-			
 				<!--
 				<ul id="table">
 					<li>
