@@ -14,6 +14,11 @@
 					
 			<div id="contentsection">
 			
+				<?php include("incl/site/cookie.php") ?>
+				<?php include("incl/site/modurl.php") ?>
+				<?php include("incl/site/hidden.php") ?>
+				<?php include("incl/site/session.php") ?>
+			
 				<!--
 				<ul id="table">
 					<li>
