@@ -14,8 +14,10 @@
 		}
 		
 		if($_POST["btnAction"] == "Sortera") { // Om någon tryckt på motsvarande knapp går vi in här
-			$oMyArray->sortArray();
-			echo($oMyArray->array2XHTMLTable());
+			$oMyArray->string2Array($_POST["hidArray"]);
+			
+			//$oMyArray->sortArray();
+			//echo($oMyArray->array2XHTMLTable());
 		}
 	}
 				
