@@ -55,9 +55,8 @@
 				   		 include("incl/site/". $filetoinclude);
 				   	}
 				   	
-				   	include("incl/myArray.php");
 				   	
-				   	
+		
 				?>
 				
 				<!--
