@@ -17,6 +17,7 @@
 			$oMyArray->string2Array($_POST["hidArray"]);
 			$oMyArray->sortArray();
 			echo($oMyArray->array2XHTMLTable());
+			$oMyArray->array2String($_POST["hidArray"]);
 		}
 	}
 				
