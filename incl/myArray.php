@@ -45,26 +45,26 @@
 			}
 			
 			public function array2XHTMLTable() {
-				$strOutput = "<div>" . PHP_EOL . "<table>" . PHP_EOL;
+				$strOutput = "<ul id=\"table\">" . PHP_EOL;
 				$counter = 0;
 				
 				for ($outerCounter = 1; $outerCounter <= 10; $outerCounter++) {
-					$strOutput .= "<tr>" . PHP_EOL;
+					$strOutput .= "<li><ul>" . PHP_EOL;
 					
 					for ($innerCounter = 1; $innerCounter <= 10; $innerCounter++) {
-						$strOutput .= "<td> <img src=\"image/image";
+						$strOutput .= "<li> <img src=\"image/image";
 						$strOutput .= $this->intArray[$counter];
 						$strOutput .= ".png\" alt=\"" . $this->intArray[$counter];
-						$strOutput .= "\" /></td>" . PHP_EOL;
+						$strOutput .= "\" /></li>" . PHP_EOL;
 						$counter++;
 						
 					}
 					
-					$strOutput .= "</tr>" . PHP_EOL;	
+					$strOutput .= "</ul></li>" . PHP_EOL;	
 			
 				}
 				
-				$strOutput .= "</table>" . PHP_EOL . "</div>"; 
+				$strOutput .= "</ul>"; 
 				
 				return $strOutput;
 				
