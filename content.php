@@ -35,8 +35,6 @@
 	   		 $method = "ingen metod vald ännu!";
 	   	}
 	   	
-	   	include("incl/myArray.php");
-	   	
 	   	include("incl/site/". $filetoinclude);
 	   			
 	?>
