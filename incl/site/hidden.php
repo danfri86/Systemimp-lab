@@ -2,8 +2,6 @@
 	
 	echo("hidden.php");
 	
-	include("incl/myArray.php");
-	
 	$oMyArray = new MyArray();
 				   	
 	if(isset($_POST["btnAction"])) { // Kontrollera om något kommer in från formuläret. Om något tryckt på knappen btnAction

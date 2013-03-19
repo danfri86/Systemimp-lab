@@ -1,62 +1,44 @@
 <?php include("incl/header.php") ?>
-	
-<body>
-	<div id="sitewrapper" class="clearfix">
-	
-		<div id="siteheader">
-			<h1>Tillståndslös miljö, PHP och Array</h1>			
-		</div><!-- /#siteheader -->
-		
-		
-		<div id="contentwrapper">
 		                                
 			<?php include("incl/nav.php") ?>
 					
 			<div id="contentsection">
 				
 				<?php
-					$p = "p";
-				
+					$filetoinclude = "";
+					
 					if (isset($_GET["p"])) {
 				   		echo($_GET["p"]. " ");
 				   		
 				   		if ($_GET["p"] == "h") {
 					   		$filetoinclude = "hidden.php";
 					   		$method = "hidden";
-					   		
-					   		include("incl/site/". $filetoinclude);
 				   		}
 				   		
 				   		if ($_GET["p"] == "m") {
 					   		$filetoinclude = "modurl.php";
 					   		$method = "modurl";
-					   		
-					   		include("incl/site/". $filetoinclude);
 				   		}
 				   		
 				   		if ($_GET["p"] == "c") {
 					   		$filetoinclude = "cookie.php";
 					   		$method = "cookie";
-					   		
-					   		include("incl/site/". $filetoinclude);
 				   		}
 				   		
 				   		if ($_GET["p"] == "s") {
 					   		$filetoinclude = "session.php";
 					   		$method = "session";
-					   		
-					   		include("incl/site/". $filetoinclude);
 				   		}
 				   	}
 				   	else {
 				   		 $filetoinclude = "default.php";
 				   		 $method = "ingen metod vald ännu!";
-				   		 
-				   		 include("incl/site/". $filetoinclude);
 				   	}
 				   	
+				   	include("incl/myArray.php");
 				   	
-		
+				   	include("incl/site/". $filetoinclude);
+				   			
 				?>
 				
 				<!--

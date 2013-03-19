@@ -18,3 +18,12 @@
 		<!--css-->
 		<link rel="stylesheet" href="style/basicstyle.css" type="text/css" /> 
 	</head>
+	
+	<body>
+	<div id="sitewrapper" class="clearfix">
+	
+		<div id="siteheader">
+			<h1>Tillståndslös miljö, PHP och Array</h1>			
+		</div><!-- /#siteheader -->
+		
+		<div id="contentwrapper">
