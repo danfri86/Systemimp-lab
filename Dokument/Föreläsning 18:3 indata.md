@@ -36,5 +36,4 @@ if ($_POST[”btnAction”] == Slumpa) {
 	$oMyArray->array2zHTMLTable();  
 }
 
-
 	
