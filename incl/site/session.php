@@ -1,4 +1,18 @@
 <?php
+
+	/*
+	//Skapar en textfil på servern. Skickar en sessionskaka tillbaka tillsammans med sessions.php
+	session_start();
+	
+	//Stoppar in kod=ISGB11 i sessionskakan
+	$_SESSION["kod"]="ISGB11";
+	
+	//Skriver ut innehållet i kakan
+	echo($_SESSION["kod"];
+	*/
+	
+	session_start();
+	session_regenerate_id(true);
 	
 	echo("session.php");
 	
@@ -11,16 +25,16 @@
 		if($_POST["btnAction"] == "Slumpa") { // Om någon tryckt på motsvarande knapp går vi in här
 			$oMyArray->randomArray();
 			echo($oMyArray->array2XHTMLTable());
+			$oMyArray->setArray($_SESSION["session"]);
 		}
 		
 		if($_POST["btnAction"] == "Sortera") { // Om någon tryckt på motsvarande knapp går vi in här
-			$oMyArray->getArray($_POST["hidArray"]);
+			$_SESSION["session"] = $oMyArray->getArray();
 			$oMyArray->sortArray();
 			echo($oMyArray->array2XHTMLTable());
-			$oMyArray->setArray($_POST["hidArray"]);
 		}
 	}
-				
+	
 ?>
 
 <form id="buttonlink" method="post" action="content.php?p=s">
