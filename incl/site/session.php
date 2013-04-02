@@ -7,9 +7,11 @@
 	//Stoppar in kod=ISGB11 i sessionskakan
 	$_SESSION["kod"]="ISGB11";
 	
-	//Skriver ut innehållet i kakan
+	//Skriver ut innehållet i sessionen
 	echo($_SESSION["kod"];
 	*/
+	
+	ob_start();
 	
 	session_start();
 	session_regenerate_id(true);
@@ -25,15 +27,16 @@
 		if($_POST["btnAction"] == "Slumpa") { // Om någon tryckt på motsvarande knapp går vi in här
 			$oMyArray->randomArray();
 			echo($oMyArray->array2XHTMLTable());
-			$oMyArray->setArray($_SESSION["session"]);
 		}
 		
 		if($_POST["btnAction"] == "Sortera") { // Om någon tryckt på motsvarande knapp går vi in här
-			$_SESSION["session"] = $oMyArray->getArray();
+			$oMyArray->setArray($_SESSION["minSession"]);
 			$oMyArray->sortArray();
 			echo($oMyArray->array2XHTMLTable());
 		}
 	}
+	
+	$_SESSION["minSession"] = $oMyArray->getArray();
 	
 ?>
 
