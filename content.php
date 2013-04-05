@@ -32,7 +32,7 @@
 	   	}
 	   	else {
 	   		 $filetoinclude = "default.php";
-	   		 $method = "ingen metod vald ännu!";
+	   		 echo("ingen metod vald ännu!<br/>");
 	   	}
 	   	
 	   	include("incl/site/". $filetoinclude);
@@ -59,7 +59,7 @@
 	-->					
 					
 </div><!-- /#contentsection -->
-
+<?php // include("incl/site/demo.php"); ?>
 </div><!-- /#contentwrapper -->
 
 <?php $method = "Ingen vald ännu!";	?>
