@@ -1,7 +1,7 @@
 <?php
 
-	require_once("simpletest/autorun.php");
-	require_once("simpletest/web_tester.php");
+	require_once("test/simpletest/autorun.php");
+	require_once("test/simpletest/web_tester.php");
 	
 	class TestOfSessionSite extends WebTestCase {
 		function testSessionSolution() {

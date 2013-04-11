@@ -25,8 +25,8 @@
 
 <form id="buttonlink" method="post" action="content.php?p=h">
 	<div>
-		<input type="submit" name="btnAction" value="Slumpa" />
-		<input type="submit" name="btnAction" value="Sortera" />
+		<input type="submit" name="btnAction" id="btnSlumpa" value="Slumpa" />
+		<input type="submit" name="btnAction" id="btnSortera" value="Sortera" />
 		
 		<input type="hidden" name="hidArray" value="<?php echo($oMyArray->array2String()); ?>"/>
 	</div>
